@@ -1,0 +1,205 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left {
+    position: relative;
+    flex: 1;
+    z-index: 1;
+    padding: 60px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.right {
+    flex: 1;
+}
+
+.left-head {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+}
+
+.left-head p {
+    color: #ffffff;
+}
+
+.left-head-c {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+}
+
+.left-body {
+    padding-bottom: 40px;
+    padding-left: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.right .right-head {
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.right .right-head button {
+    outline: none;
+    border: none;
+    padding: 8px 24px;
+    background: rgb(50, 50, 50);
+    border-radius: 20px;
+    color: #ffffff;
+}
+.right-top{
+
+}
+.right-top h1,
+.right-top p{
+    padding: 0;
+    margin: 0;
+}
+.right-top p{
+    margin-top: 12px;
+}
+.right-top-head-body {
+    display: flex;
+    flex-direction: column;
+    font-weight:700;
+}
+
+.right-bottom-body {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 120px 0;
+    gap: 5rem;
+}
+
+.right-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.login-actions{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 52px;
+}
+.login-actions-content {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-top: 2rem;
+}
+
+.login-actions button{
+    outline: none;
+    border: none;
+    padding:8px 10px;
+    background:rgb(50, 50, 50);
+    border-radius: 20px;
+    color: #ffff;
+}
+
+.instan-login{
+    display: flex;
+    padding-top: 2rem;
+    color: darkgrey;
+}
+
+.google-facebook-icon{
+   display: flex;
+   flex-direction:row;
+   justify-content:;
+   align-items: center;
+   gap: 5rem;
+   height: 1rem;
+    width: 50px;
+   padding-bottom: 3rem;
+}
+
+.paragraph{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-bottom input.block{
+    border-radius: .5rem;
+    padding: .5rem;
+    border-color: lightslategray;
+}
+
+.right-bottom input::placeholder{
+    color: darkgrey;
+    font-style: italic;
+}
+
+.right-bottom label{
+    font-weight: bold;
+}
+
+.instan-login{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.checkbox{
+display: flex;
+flex-direction:row;
+align-items: center;
+}
+
+
+.login-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.login-option{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none !important;
+}
+.login-option img{
+    width: 24px;
+    height: 24px;
+}
+.login-option p{
+    color: black;
+}
